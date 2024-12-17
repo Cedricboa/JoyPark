@@ -29,6 +29,12 @@ $attractions = $db->attractions->find();
             <div class="grid">
                 <?php foreach ($attractions as $attraction): ?>
                     <div class="card">
+                        <!-- Affichage de l'image -->
+                        <img src="<?= htmlspecialchars($attraction['image_url'] ?? 'placeholder.jpg') ?>" 
+                             alt="<?= htmlspecialchars($attraction['name'] ?? 'Image indisponible') ?>" 
+                             class="card-img">
+                             
+                        <!-- Affichage des détails -->
                         <h2><?= htmlspecialchars($attraction['name'] ?? 'Nom inconnu') ?></h2>
                         <p><strong>Type :</strong> <?= htmlspecialchars($attraction['type'] ?? 'Type inconnu') ?></p>
                         <p><strong>Description :</strong> <?= htmlspecialchars($attraction['description'] ?? 'Pas de description.') ?></p>
