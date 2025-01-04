@@ -1,7 +1,5 @@
 <?php
 require 'vendor/autoload.php';
-
-// Connexion à MongoDB
 $client = new MongoDB\Client("mongodb://localhost:27017");
 $db = $client->messi;
 
@@ -15,11 +13,12 @@ $attractions = $db->attractions->find();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Attractions - JoyPark</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="attractions.css">
+
 </head>
-<body>
+<body class="attractions-page">
     <!-- En-tête -->
-    <header>
+    <header class="hero-header">
         <h1>Nos Attractions</h1>
     </header>
 
@@ -29,12 +28,9 @@ $attractions = $db->attractions->find();
             <div class="grid">
                 <?php foreach ($attractions as $attraction): ?>
                     <div class="card">
-                        <!-- Affichage de l'image -->
                         <img src="<?= htmlspecialchars($attraction['image_url'] ?? 'placeholder.jpg') ?>" 
                              alt="<?= htmlspecialchars($attraction['name'] ?? 'Image indisponible') ?>" 
                              class="card-img">
-                             
-                        <!-- Affichage des détails -->
                         <h2><?= htmlspecialchars($attraction['name'] ?? 'Nom inconnu') ?></h2>
                         <p><strong>Type :</strong> <?= htmlspecialchars($attraction['type'] ?? 'Type inconnu') ?></p>
                         <p><strong>Description :</strong> <?= htmlspecialchars($attraction['description'] ?? 'Pas de description.') ?></p>
@@ -45,6 +41,10 @@ $attractions = $db->attractions->find();
             </div>
         </section>
     </main>
+    <!-- Bouton Retour à l'accueil -->
+    <div style="text-align: center; margin: 20px;">
+        <a href="index.php" class="back-button">Retour à l'accueil</a>
+    </div>
 
     <!-- Pied de page -->
     <footer>

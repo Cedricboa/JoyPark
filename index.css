@@ -1,0 +1,76 @@
+/* ========== Styles généraux ========== */
+body.index-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond générale */
+    color: #333; /* Couleur du texte général */
+  }
+  
+  /* ========== En-tête (header avec le logo) ========== */
+  .top-header {
+    background-color: #fff; /* Fond blanc pour l'en-tête */
+    text-align: center; /* Centre le contenu horizontalement */
+    padding: 20px 0; /* Ajout de padding */
+    border-bottom: 3px solid #333; /* Ligne de séparation avec la nav */
+  }
+  .top-header .logo {
+    max-width: 120px; /* Ajustez la largeur si besoin */
+    height: auto; /* Maintient les proportions */
+    margin-bottom: 10px; /* Espace sous le logo */
+  }
+  
+  /* ========== Barre de navigation (noire) ========== */
+  .main-nav {
+    background-color: #333; /* Fond sombre pour la nav */
+    text-align: center; /* Centre les éléments */
+  }
+  .main-nav ul {
+    list-style: none; /* Retire les puces */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Positionne les éléments horizontalement */
+    justify-content: center;
+  }
+  .main-nav ul li {
+    margin: 0 15px; /* Espacement horizontal entre les liens */
+  }
+  .main-nav ul li a {
+    color: #fff; /* Texte blanc */
+    text-decoration: none; /* Retire le soulignement */
+    font-size: 1.2em; /* Taille de la police */
+    padding: 10px 20px; /* Espace autour du texte */
+    transition: background 0.3s ease-in-out; /* Animation au survol */
+  }
+  .main-nav ul li a:hover {
+    background-color: #444; /* Fond gris foncé au survol */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  /* ========== Section d’accueil (fond gris clair) ========== */
+  .welcome-section {
+    background-color: #f0f2f2; /* Fond gris clair */
+    text-align: center; /* Centre le contenu */
+    padding: 60px 20px; /* Espacement autour du texte */
+    border-top: 3px solid #333; /* Séparation après la nav */
+  }
+  .welcome-section h1 {
+    font-size: 2.5em; /* Taille du titre */
+    margin-bottom: 0.5em; /* Espace en bas du titre */
+    color: #ff5733; /* Couleur titre */
+  }
+  .welcome-section p {
+    font-size: 1.2em; /* Taille du texte */
+    color: #666; /* Couleur du texte */
+  }
+  
+  /* ========== Pied de page (noir) ========== */
+  footer {
+    background-color: #333; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center; /* Centre le texte */
+    padding: 15px 0; /* Espacement vertical */
+    margin-top: 20px; /* Espace avant le pied de page */
+    font-size: 0.9em; /* Taille du texte */
+  }
+  

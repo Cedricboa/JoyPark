@@ -1,0 +1,161 @@
+/* Styles globaux */
+body.tickets-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* En-tête */
+.hero-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-header a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.hero-header a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Grille des tickets */
+.tickets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Carte d'un ticket */
+.ticket-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ticket-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du ticket */
+.ticket-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Texte du ticket */
+.ticket-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.ticket-card strong {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Bouton Ajouter au panier */
+.add-to-cart-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Styles pour les messages */
+.alert {
+    margin: 15px auto;
+    max-width: 800px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation pour les messages */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pied de page */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}

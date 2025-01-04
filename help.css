@@ -1,0 +1,87 @@
+/* ========== Styles généraux ========== */
+body.help-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur de fond */
+    color: #333; /* Couleur du texte */
+}
+
+/* En-tête */
+.help-page header {
+    text-align: center; /* Centrer le texte */
+    background-color: #fff; /* Fond blanc */
+    padding: 20px; /* Espacement autour */
+    border-bottom: 3px solid #333; /* Ligne de séparation */
+}
+
+.help-page header h1 {
+    font-size: 2.5em; /* Taille du titre */
+    margin: 10px 0;
+    color: #333; /* Couleur du titre */
+}
+
+.help-page header p {
+    font-size: 1.2em; /* Taille du sous-titre */
+    color: #777; /* Couleur douce */
+    margin: 10px 0;
+}
+
+/* Sections d'aide */
+.help-section {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* Fond blanc */
+    border: 1px solid #ddd; /* Bordure douce */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+.help-section h2 {
+    font-size: 1.8em; /* Taille des sous-titres */
+    margin-bottom: 10px;
+    color: #333; /* Couleur sombre */
+    border-bottom: 2px solid #ddd; /* Ligne sous le titre */
+    padding-bottom: 5px;
+}
+
+.help-section p,
+.help-section li {
+    font-size: 1em; /* Taille du texte */
+    color: #666; /* Couleur douce */
+    line-height: 1.6; /* Hauteur de ligne */
+}
+
+.help-section a {
+    color: #007BFF; /* Lien bleu */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.help-section a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.help-section ol,
+.help-section ul {
+    margin-left: 20px; /* Marges pour listes */
+    padding-left: 10px;
+}
+
+.help-section ol li {
+    margin-bottom: 10px;
+}
+
+.help-section ul li {
+    margin-bottom: 8px;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    text-align: center; /* Centre le contenu */
+    padding: 15px 0; /* Espacement vertical */
+    margin-top: 20px; /* Espace avant le pied de page */
+    font-size: 0.9em; /* Taille du texte */
+}

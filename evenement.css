@@ -1,0 +1,68 @@
+/* Conteneur de la grille */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grille responsive */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer la grille */
+}
+
+/* Style des cartes */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Effet au survol */
+}
+
+/* Style des images des cartes */
+.card-img {
+    width: 100%; /* Image occupe toute la largeur */
+    height: 200px; /* Hauteur fixe pour uniformiser */
+    object-fit: cover; /* Coupe l'image pour s'adapter au conteneur */
+    background-color: #f0f0f0; /* Fond par défaut si image absente */
+}
+
+/* Contenu des cartes */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    color: #666;
+}
+
+/* Styles spécifiques pour la page événements */
+.events-page header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd;
+}
+
+.events-page header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+.events-page header p {
+    font-size: 1.2em;
+    color: #777;
+}
